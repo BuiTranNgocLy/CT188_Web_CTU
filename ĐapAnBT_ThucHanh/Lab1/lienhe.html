@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Liên hệ</title>
+      <link
+         rel="shortcut icon"
+         type="image/vnd.microsoft.icon"
+         href="file:///D:/WEB/CT188/BaiTapThucHanh/Lab1/data/images/favicon.ico"
+         />
+   </head>
+   <body>
+      <header>
+         <!-- Thiết kế nội dung tiêu đề -->
+         <a href="trangchu.html">
+         <img src="file:///D:/WEB/CT188/Lab1/images/logo.png" id="logo" />
+         </a>
+         <nav class="nav-bar">
+            <!-- Thiết kế thanh điều hướng -->
+            <a href="trangchu.html" class="item-nav-bar" target="_blank"
+               >Trang chủ</a
+               >
+            <a href="gioithieu.html" class="item-nav-bar" target="_blank"
+               >Giới thiệu</a
+               >
+            <a href="sanpham.html" class="item-nav-bar" target="_blank">Sản phẩm</a>
+            <a href="tintuc.html" class="item-nav-bar" target="_blank">Tin tức</a>
+            <a href="lienhe.html" class="item-nav-bar" target="_blank">Liên hệ</a>
+            <a href="dangnhap.html" class="item-nav-bar" target="_blank"
+               >Đăng nhập</a
+               >
+            <a href="dangky.html" class="item-nav-bar" target="_blank">Đăng ký</a>
+         </nav>
+      </header>
+      <main>
+         <h1>Liên hệ</h1>
+         <img
+            src="file:///D:/WEB/CT188/BaiTapThucHanh/Lab1/data/images/lienhe/check-in.png"
+            alt=""
+            width="160"
+            height="160"
+            />
+         <h1>Địa chỉ ABC, Tòa nhà 123, TP Cần Thơ</h1>
+         <!--Gom nhóm các điều khiển, nhãn trong 1 trang web -> fieldset-->
+         <fieldset>
+            <legend>Góp ý</legend>
+            <!--hiển thị nhãn-->
+            <table>
+               <!--để con trỏ nằm trong ô nhập liệu, thuộc tính for trong lable phải là id của thành phần nhập liệu tương ứng-->
+               <tr>
+                  <th><label for="name">Họ tên</label></th>
+                  <td>
+                     <input
+                        type="text"
+                        id="name"
+                        placeholder="Vui lòng nhập họ tên của bạn"
+                        />
+                  </td>
+               </tr>
+               <tr>
+                  <th><label for="email">Email</label></th>
+                  <td>
+                     <input
+                        type="text"
+                        id="email"
+                        placeholder="Vui lòng nhập địa chỉ email"
+                        />
+                  </td>
+               </tr>
+               <tr>
+                  <th><label for="cars">Chủ đề</label></th>
+                  <td>
+                  <select size="1">
+                     <option >Về sản phẩm/Dịch vụ</option>
+                     <option >Về ưu đãi thành viên</option>
+                     <option >Về tin tuyển dụng</option>
+                  </td>
+               </tr>
+               <tr>
+                  <th>Nội dung</th>
+                   <td>
+               <textarea rows="7" cols="50" placeholder="Nội dung cần liên hệ" method="post" entype="">
+                </textarea>
+            </td>
+                </tr>
+               <tr>
+                  <td>
+                     <input
+                        type="submit"
+                        value="Gửi"
+                    />
+                  </td>
+               </tr>
+            </table>
+         </fieldset>
+      </main>
+      <footer>
+         <!-- Thiết kế nội dung tiêu đề chân trang -->
+         <div class="content-footer">
+            <p>2021 Bản quyền thuộc về FreeezeVN.</p>
+            <a href="https://www.facebook.com/FreezeFrozenYogurt/" target="_blank"
+               >Facebook</a
+               >
+            <a href="https://twitter.com/yofreeze_25065" target="_blank">Twitter</a>
+            <a href="https://www.pinterest.com/NgocLy_001/_saved/" target="_blank"
+               >Pinterest</a
+               >
+            <a href="#">Về đầu trang</a>
+         </div>
+      </footer>
+   </body>
+</html>
