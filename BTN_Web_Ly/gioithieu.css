@@ -1,0 +1,167 @@
+/*Bùi Trần Ngọc Ly 
+    tạo ngày: 16/12/2021
+    Link tham khao: https://asia-garden.myharavan.com/*/
+/*Breadcrums*/
+#breadcrums {
+  background-image: url("images/banner.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 365px;
+}
+/*Responsive*/
+@media (max-width: 812px) {
+  #breadcrums {
+    height: 200px;
+  }
+}
+#breadcrums .breadcrums-inner .breadcrumb-arrows {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  -moz-transform: translate(0, 150%);
+  -webkit-transform: translate(0, 150%);
+  transform: translate(0, 150%);
+}
+@media (max-width: 46.1875em) {
+  #breadcrums .breadcrums-inner .breadcrumb-arrows {
+    -moz-transform: translate(0, 75px);
+    -webkit-transform: translate(0, 75px);
+    transform: translate(0, 75px);
+  }
+}
+#breadcrums .breadcrums-inner .breadcrumb-arrows li span {
+  color: #ffffff;
+  font-size: 70px;
+  line-height: 1.3;
+  letter-spacing: 1px;
+  font-weight: 300;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+  overflow: hidden;
+}
+/*Responsive*/
+@media (max-width: 812px) {
+  #breadcrums .breadcrums-inner .breadcrumb-arrows li span {
+    font-size: 24px;
+  }
+}
+/*End Breadscrums*/
+
+/*about-info*/
+.container-fluid {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  /* margin-right: -15px; */
+  /* margin-left: -15px; */
+  justify-content: center;
+}
+#about-info .about-intro--inner .about-intro--inner-background-left {
+  background-image: url("gioithieu/daubep_1.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+/*Responsive*/
+@media (max-width: 47.9375em) {
+  #about-info .about-intro--inner .about-intro--inner-background-left {
+    height: 400px;
+    margin: 15px 15px;
+    -ms-flex: 0 0 calc(100% - 30px);
+    flex: 0 0 calc(100% - 30px);
+    max-width: calc(100% - 30px);
+  }
+}
+
+.col-md-5 {
+  /* position: relative; */
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+/*Responsive*/
+@media (min-width: 768px) {
+  .col-md-5 {
+    flex: 0 0 41.666667%;
+    max-width: 41.666667%;
+  }
+}
+
+.col-md-7 {
+  /* position: relative; */
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+/*resposive*/
+@media (min-width: 768px) {
+  .col-md-7 {
+    /* -ms-flex: 0 0 58.333333%; */
+    flex: 0 0 58.333333%;
+    max-width: 58.333333%;
+  }
+}
+
+/*Nội dung bên phải trang*/
+#sabout-info .sabout-intro--inner .about-intro--inner-right {
+  padding: 20%;
+}
+@media (max-width: 47.9375em) {
+  #about-info .about-intro--inner .section-about-intro--inner-right {
+    padding: 0;
+    margin: 0 0 40px 0;
+  }
+}
+/*định dạng h1*/
+#about-info .about-intro--inner .about-intro--inner-right h1 {
+  font-size: 44px;
+  line-height: 1.2;
+  font-weight: 300;
+  margin: 0 0 20px 0;
+}
+/*responsive h1*/
+@media (max-width: 47.9375em) {
+  #sabout-info .sbout-intro--inner .about-intro--inner-right h1 {
+    font-size: 24px;
+    line-height: 35px;
+  }
+}
+:-webkit-any(article, aside, nav, section) h1 {
+  /* font-size: 1.5em; */
+  margin-block-start: 0.83em;
+  margin-block-end: 0.83em;
+}
+h1 {
+  display: block;
+  /* font-size: 2em;
+    margin-block-start: 0.67em;
+    margin-block-end: 0.67em; */
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  /* font-weight: bold; */
+}
+/*định dạng thẻ p*/
+#about-info .sabout-intro--inner .about-intro--inner-right p {
+  font-size: 16px;
+  line-height: 24px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  margin: 0 0 20px 0;
+  text-align: justify;
+}
+p {
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+}
+/*End about info*/

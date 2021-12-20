@@ -1,0 +1,771 @@
+/*Bùi Trần Ngọc Ly 
+    tạo ngày: 16/12/2021
+    Link tham khao: https://asia-garden.myharavan.com/ */
+/*Định dạng khối section Home-banner*/
+#home-banner {
+  background-image: url("images/home.jpg");
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 130vh;
+  background-attachment: fixed;
+}
+#home-banner:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: rgba(15, 9, 48, 0.6);
+  display: none;
+}
+/*Responsive hemo-banner*/
+@media (max-width: 61.9375em) {
+  #home-banner {
+    height: initial;
+    background-attachment: initial;
+    padding: 100px 15px 185px;
+  }
+}
+@media (max-width: 47.9375em) {
+  #home-banner {
+    padding: 100px 15px;
+  }
+}
+.text-center {
+  text-align: center !important;
+}
+p {
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  margin-bottom: 10px;
+}
+/*inner-banner*/
+#home-banner .inner-banner--inner {
+  -moz-transform: translate(0, 130%);
+  -webkit-transform: translate(0, 130%);
+  transform: translate(0, 130%);
+  /* display: flex;
+  flex-direction: column;
+  width: 960px;
+  margin: 0 auto; */
+}
+/*responsive inner-banner*/
+@media (max-width: 61.9375em) {
+  #shome-banner .inner-banner--inner {
+    transform: initial;
+  }
+}
+/*Định dạng thẻ p thứ 1*/
+#home-banner .inner-banner--inner .inner-banner--text-1 {
+  font-size: 30px;
+  line-height: 45px;
+  color: white;
+  text-transform: uppercase;
+}
+/*responsive text-1*/
+@media (max-width: 61.9375em) {
+  #home-banner .inner-banner--inner .inner-banner--text-1 {
+    font-size: 18px;
+    line-height: 23px;
+    margin: 0 0 20px 0;
+  }
+}
+@media (max-width: 20em) {
+  #home-banner .inner-banner--inner .inner-banner--text-1 {
+    font-size: 16px;
+  }
+}
+/*định dạng text-2*/
+#home-banner .inner-banner--inner .inner-banner--text-2 {
+  font-size: 71px;
+  line-height: 90px;
+  color: white;
+}
+/*responsive text-2*/
+@media (max-width: 61.9375em) {
+  #home-banner .inner-banner--inner .inner-banner--text-2 {
+    font-size: 34px;
+    line-height: 1.2;
+    margin: 0 0 20px 0;
+  }
+}
+@media (max-width: 20em) {
+  #home-banner .inner-banner--inner .inner-banner--text-2 {
+    font-size: 26px;
+    margin-bottom: 16px;
+  }
+}
+/*Định dạng text-3*/
+#home-banner .inner-banner--inner .inner-banner--text-3 {
+  font-size: 18px;
+  line-height: 27px;
+  color: white;
+}
+/*responsive text-3*/
+@media (max-width: 61.9375em) {
+  #home-banner .inner-banner--inner .inner-banner--text-3 {
+    font-size: 14px;
+    line-height: 19px;
+  }
+}
+/*Định dạng nút chọn*/
+#home-banner .inner-banner--inner .inner-banner--action {
+  margin: 30px 0 0 0;
+}
+/*Nút ở trạng thái bắt đầu*/
+#home-banner .inner-banner--inner .inner-banner--action a:first-child {
+  color: #ffffff;
+  background-color: #db1a2a;
+  border-color: #db1a2a;
+  font-size: 17px;
+  padding: 16px 15px;
+  min-width: 180px;
+  border-radius: 4px;
+  display: inline-block;
+  margin: 0 10px;
+}
+/*Responsive nút*/
+@media (max-width: 61.9375em) {
+  #home-banner .inner-banner--inner .inner-banner--action a:first-child {
+    font-size: 14px;
+    padding: 16px 4px;
+    min-width: 145px;
+  }
+}
+@media (max-width: 20em) {
+  #home-banner .inner-banner--inner .inner-banner--action a:first-child {
+    font-size: 12px;
+    min-width: 115px;
+    padding: 10px 4px;
+  }
+}
+/*Nút ở trạng thái cuối*/
+#home-banner .inner-banner--inner .inner-banner--action a:last-child {
+  color: black;
+  background-color: white;
+  border-color: white;
+  font-size: 17px;
+  padding: 16px 15px;
+  min-width: 180px;
+  border-radius: 4px;
+  display: inline-block;
+  margin: 0 10px;
+}
+/*responvise nút*/
+@media (max-width: 61.9375em) {
+  #home-banner .inner-banner--inner .inner-banner--action a:last-child {
+    font-size: 14px;
+    padding: 16px 4px;
+    min-width: 145px;
+  }
+}
+@media (max-width: 20em) {
+  #home-banner .inner-banner--inner .inner-banner--action a:last-child {
+    font-size: 12px;
+    min-width: 115px;
+    padding: 10px 4px;
+  }
+}
+#home-banner .inner-banner--inner .inner-banner--action a:hover {
+  background: black;
+  color: white;
+}
+/*End Home-banner*/
+
+/*Bắt đầu home service*/
+#home-service {
+  z-index: 9;
+  padding-bottom: 125px;
+}
+@media (min-width: 768px) and (max-width: 61.9375em) {
+  #home-service {
+    padding-bottom: 60px;
+  }
+}
+@media (max-width: 47.9375em) {
+  #home-service {
+    padding-bottom: 0;
+    padding: 40px 0 20px 0;
+  }
+}
+#home-service .inner-home-service .content-home-service {
+  display: flex;
+  justify-content: space-between;
+  max-width: 800px;
+  margin: 0 auto;
+  background: white;
+  position: relative;
+  padding: 35px 60px;
+  border-radius: 20px;
+  -webkit-box-shadow: 0 0 60px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0 0 60px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 60px rgba(0, 0, 0, 0.2);
+}
+@media (max-width: 47.9375em) {
+  #home-service .inner-home-service .content-home-service {
+    max-width: none;
+    padding: 0;
+    border-radius: 0;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    flex-wrap: wrap;
+  }
+}
+#home-service .inner-home-service .content-home-service .item-service {
+  text-align: center;
+}
+@media (max-width: 47.9375em) {
+  #home-service .inner-home-service .content-home-service .item-service {
+    width: 50%;
+    margin: 0 0 20px 0;
+  }
+}
+#home-service
+  .inner-home-service
+  .content-home-service
+  .item-service
+  .box-img-service {
+  margin: 0 0 15px 0;
+}
+#home-service
+  .inner-home-service
+  .content-home-service
+  .item-service
+  .box-img-service
+  .ls-blur-up-img {
+  left: 29%;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: 0;
+}
+#home-service
+  .inner-home-service
+  .content-home-service
+  .item-service
+  .box-img-service
+  img {
+  width: 50px;
+  filter: grayscale(100%);
+  display: inline-block;
+}
+#home-service .inner-home-service .content-home-service .item-service a {
+  text-transform: uppercase;
+}
+#home-service
+  .inner-home-service
+  .content-home-service
+  .item-service:hover
+  img {
+  filter: grayscale(0);
+}
+#home-service .inner-home-service .content-home-service .item-service:hover a {
+  color: #c4152b;
+}
+/*End home service*/
+
+/*Bắt đầu Home about 122 - 199*/
+/*Định dạng Home-about gồm 2 hình ảnh và phần khám phá câu chuyện của nhà hàng*/
+#home-about {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  padding: 1em;
+}
+/*Định dạng phần bên trái là bố cục hình ảnh*/
+.left-about {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: center;
+  padding: 0px 15px;
+}
+/*Các giá trị hình ảnh*/
+.left-about-img {
+  padding: 30px;
+  margin: 30px;
+}
+/*Định dạng phần bên phải là phần câu chuyện*/
+.right-about {
+  flex-basis: 50%;
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+/*Định dạng phần tiêu đề*/
+.right-about-title {
+  text-transform: uppercase;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 30px;
+}
+/*Định dạng phần thẻ h1*/
+.right-about-title h1 {
+  color: #333;
+  font-size: 35px;
+  font-weight: 500;
+  line-height: 28.8px;
+  margin: 0px 0px 10px;
+  text-transform: uppercase;
+}
+/*Định dạng phần thẻ h4*/
+.right-about-title h4 {
+  color: #db1a2a;
+  line-height: 19.2px;
+  font-size: 25px;
+  margin-top: 10px;
+}
+/*Định dạng bố cục chung của 3 div-card*/
+.container-about {
+  max-width: 100vw;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 35px;
+  margin: 0 auto;
+  padding: 40px 0;
+}
+/*Định nghĩa phần nền phía dưới cùng của các card*/
+.card {
+  position: relative;
+  font-size: medium;
+  width: 300px;
+  height: 400px;
+  margin: 0 auto;
+  background: rgb(83, 70, 70);
+  border-radius: 15px;
+  box-shadow: 0 15px 60px rgba(0, 0, 0, 0.5); /*màu viền xung quanh khung*/
+}
+/*Lớp phía ngoài các ô*/
+.face {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.face1 {
+  box-sizing: border-box;
+  padding: 20px;
+}
+/*Định nghĩa phần văn bản của từng ô*/
+.one {
+  background-color: #fff;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.two {
+  background-color: #fff;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.three {
+  background-color: #fff;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+/*Định nghĩa lớp ngoài cùng*/
+.face2 {
+  transition: 0.5s; /*khoản thời gian khi di chuột vào lớp ngoài hạ xuống thấy nội dung bên trong*/
+}
+/*Định nghĩa phần văn bản phía ngoài*/
+.face2 h2 {
+  margin: 0;
+  padding: 0;
+  font-size: 80px;
+  color: #333;
+  transition: 0.5s;
+  text-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  z-index: 10;
+}
+/*Định nghĩa chiều cao của thẻ ngoài khi di chuột vào thẻ ngoài sẽ hạ xuống*/
+.card:hover .face.face2 {
+  height: 60px;
+}
+/*Định nghĩa lớp màu nền che nội dung phần văn bản bên trong, nếu không sử dụng thì lớp này sẽ trong suốt & chỉ có số thứ tự của từng card*/
+.card:nth-child(1) .face.face2 {
+  background-image: linear-gradient(40deg, #db1a2a 0%, #ffeaa7 45%, #fff 100%);
+  border-radius: 15px;
+}
+.card:nth-child(2) .face.face2 {
+  background-image: linear-gradient(40deg, #db1a2a 0%, #ffeaa7 45%, #fff 100%);
+  border-radius: 15px;
+}
+.card:nth-child(3) .face.face2 {
+  background-image: linear-gradient(40deg, #db1a2a 0%, #ffeaa7 45%, #fff 100%);
+  border-radius: 15px;
+}
+/*End Home about*/
+
+/*Bắt đầu phần Home order*/
+/*Định nghĩa phần home order*/
+#home-order {
+  background-image: url(./images/img_home_main_order.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  font-size: 100%;
+  font-weight: 400;
+  line-height: 1.5;
+  vertical-align: baseline;
+}
+/*Địnha nghĩa phần inner giúp chia order thành 2 cột & có lớp phủ lên hình nền tạo màu sắc khác nhau ở 2 bên*/
+.inner-order {
+  background: linear-gradient(
+    to right,
+    rgba(255, 255, 255, 0.9) 0%,
+    rgba(237, 241, 244, 0.6) 50%,
+    rgba(11, 17, 33, 0) 50%,
+    black 50%,
+    rgba(0, 0, 0, 0.71) 100%
+  );
+  font-size: 100%;
+  font-size: 30px;
+  text-align: center;
+  display: grid;
+  justify-content: center;
+  grid-template-columns: 50% 50%;
+}
+/*Định nghĩa phần bố cục bên trái*/
+.content-left-order {
+  color: #333;
+  font-size: 14px;
+  line-height: 21px;
+  padding: 120px 65px 120px 50px;
+  text-align: left;
+}
+/*Tiêu đề phần bên trái*/
+.content-left-order .section-head {
+  margin: 0px 0px 60px;
+  text-transform: uppercase;
+}
+.content-left-order .section-head h1 {
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 28.8px;
+  margin: 0px 0px 10px;
+  text-align: left;
+}
+.content-left-order .section-head h4 {
+  color: #db1a2a;
+  font-weight: bold;
+  line-height: 19px;
+}
+/*Định nghĩa Grid time-for-order thành các cột trong bảng*/
+.time-for-order {
+  font-size: 14px;
+  line-height: 21px;
+  text-align: left;
+  display: grid;
+  grid-template-columns: auto;
+}
+/*Định dạng chung cả 4 item*/
+.item-order {
+  align-items: center;
+  display: flex;
+  margin: 0px 0px 15px;
+  padding: 0px 0px 15px 100px;
+  text-align: left;
+  align-items: center;
+  width: 100%;
+  margin: 0 0 15px 0;
+  padding: 0 0 15px 0;
+  border-bottom: 1px dashed gray;
+}
+/*Định dạng phần hình ảnh của 4 item*/
+.item-order .box-img-order {
+  border-radius: 10px;
+  display: inline;
+  font-size: 14px;
+  line-height: 21px;
+  text-align: left;
+  width: 100px;
+  height: 76px;
+}
+/*Định dạng phần văn bản bao gồm tên món, giá tiền, còn hay hết, giá chưa giảm và giá sau khi giảm, giải thích về món ăn*/
+.item-order .box-info-order {
+  padding: 0px 0px 0px 15px;
+  text-align: left;
+  width: 80%;
+}
+/*Định dạng phần tên món và trạng thái món ăn*/
+.box-info-order .box-info-order-1 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 0 5px 0;
+}
+/*Sử dụng thẻ del gạch ngang phần tử để biểu thị giá này không còn áp dụng*/
+.price-order del {
+  margin: 0 8px 0 0;
+}
+/*Định nghĩa giá đang được áp dụng*/
+.price-order span {
+  color: #db1a2a;
+  font-weight: 500;
+  font-size: 16px;
+}
+/*Phần nút lựa chọn xem tất cả menu*/
+.button-order {
+  margin: 60px 0 0 0;
+}
+.btn {
+  background: #db1a2a;
+  color: white;
+  border-radius: 30px;
+  padding: 11px 50px;
+  font-size: 14px;
+  min-width: 170px;
+  font-weight: 500;
+  display: inline-block;
+}
+/*Code giúp đổi màu nút khi di chuyển chuột vào ô chọn*/
+.btn:hover {
+  color: white;
+  outline: 0;
+  box-shadow: 0 0 0 0.2rem rgba(255, 0, 0, 0.25);
+  background: #c4152b;
+}
+.btn:focus,
+.btn:active {
+  color: white;
+  outline: 0;
+  box-shadow: 0 0 0 0.2rem rgba(255, 0, 0, 0.25);
+  background: #c4152b;
+}
+/*Bắt đầu phần oder bên phải*/
+.content-right-order {
+  color: #fff;
+  align-items: flex-end;
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 14px;
+  line-height: 21px;
+  padding: 120px 65px 120px 65px;
+  text-align: left;
+}
+/*Định dạng tiêu đề*/
+.content-right-order .section-head {
+  margin: 0px 0px 60px;
+}
+.section-head h2 {
+  color: #fff;
+  font-size: 24px;
+  margin: 0 0 10px 0;
+}
+.section-head h4 {
+  font-size: 16px;
+  color: #db1a2a;
+}
+/*Định dạng nội dung văn bản*/
+.section-cotent-infor p {
+  margin: 0 0 25px 0;
+}
+/*Định dạng phần thời gian làm việc*/
+.section-time-work {
+  display: -webkit-flex;
+  align-items: center;
+}
+/*Định dạng phần nền chứa logo kế bên khung thời gian làm việc*/
+.section-time-work .box-img-time-work {
+  width: 80px;
+  height: 80px;
+  background: white;
+  border-radius: 100%;
+  padding: 15px;
+}
+/*Giúp logo nhảy vào vị trí nền hình tròn màu trắng*/
+.box-img-time-work img {
+  border: none;
+  max-width: 100%;
+  height: auto;
+}
+/*Phần khung thời gian*/
+.section-time-work .box-time-work {
+  margin: 0 0 0 15px;
+}
+.box-time-work h4 {
+  color: #db1a2a;
+  font-weight: 500;
+  text-transform: uppercase;
+  margin: 0 0 10px 0;
+  font-size: 16px;
+}
+.box-time-work .outer-info-time {
+  /* border: 2px solid red; */
+  color: #fff;
+  display: -webkit-flex;
+}
+.outer-info-time .info-time {
+  margin: 0 20px 0 0;
+}
+.info-time span {
+  display: block;
+}
+/*Phần button cho khách hàng gọi đặt bàn*/
+.content-right-order .button-order-right {
+  margin: 30px 0 0 0;
+  width: 100%;
+}
+/*Khi di chuột vào button sẽ đổi màu*/
+.btn {
+  background: #db1a2a;
+  color: white;
+  border-radius: 30px;
+  padding: 11px 50px;
+  font-size: 14px;
+  min-width: 170px;
+  font-weight: bold;
+}
+.btn:hover {
+  color: white;
+  outline: 0;
+  box-shadow: 0 0 0 0.2rem rgba(255, 0, 0, 0.25);
+  background: #c4152b;
+}
+.btn:focus,
+.btn:active {
+  color: #c4152b;
+  outline: 0;
+  box-shadow: 0 0 0 0.2rem #fff;
+  background: #fff;
+}
+/*End Home order*/
+
+/*Home album*/
+/*Định dạng tiêu đề*/
+.section-head-album {
+  display: flex;
+  padding: 50px;
+  margin: 20px;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+/*Địng dạng thẻ h2*/
+.section-head-album h2 {
+  color: #c4152b;
+  font-weight: bold;
+  font-size: 35px;
+}
+/*Định dạng thẻ h4*/
+.section-head-album h4 {
+  margin: 10px;
+  font-size: 27px;
+  color: #333;
+}
+/*Định dạng bố cục phần content-album*/
+.content-home-album {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  padding: 40px;
+  margin: 30px;
+}
+/*Định dạng từ thẻ trong content*/
+.news-card {
+  margin: 20px;
+  position: relative;
+  overflow: hidden;
+  border-radius: 0.5rem;
+  flex: 1;
+  min-width: 290px;
+  box-shadow: 0 0 1rem rgba(0, 0, 0, 0.5);
+  -webkit-backface-visibility: hidden;
+  -webkit-transform: translate3d(0, 0, 0);
+}
+/*Định dạng phần nền của bố cục văn bản trên hình*/
+.news-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0)
+    linear-gradient(to bottom, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0.7) 80%);
+  z-index: 0;
+}
+/*Định dạng link cho toàn bộ card, khi chọn vào sẽ di chuyển đến trang Menu*/
+.news-card .news-card__card-link {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+/*Định dạng hình ảnh trong card*/
+.news-card .news-card__image {
+  display: block;
+  object-fit: cover;
+  transition: transform 3s ease;
+  backface-visibility: hidden;
+  position: relative;
+  z-index: -1;
+}
+/*Định dạng phần văn bản bào gồm tên món, miêu tả, vào khung order*/
+.news-card .news-card__text-album {
+  position: absolute;
+  bottom: 0rem;
+  padding: 1rem;
+  color: white;
+  transition: background-color 1.5s ease;
+}
+/*Định dạng tiêu đề*/
+.news-card .news-card__title {
+  transition: color 1s ease;
+  margin-bottom: 0.5rem;
+  color: #fff;
+  font-size: 35px;
+}
+/*Định dạng phần văn bản & ô chọn order*/
+.news-card .news-card__details-album {
+  transition: max-height 1.5s ease, opacity 1s ease;
+}
+/*Di chuyển chuột vào oder phần class=news-card__text-album sẽ chuyển sang màu như đã cài đặt*/
+.news-card__text-album:hover {
+  background-color: rgba(0, 0, 0, 0.6);
+}
+/*Định dạng ô chọn order*/
+.news-card__details-album .news-card__read-more {
+  background: black;
+  color: #bbb;
+  display: block;
+  padding: 0.4rem 0.6rem;
+  border-radius: 0.3rem;
+  margin-top: 1rem;
+  border: 1px solid #444;
+  font-size: 0.8rem;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  text-decoration: none;
+  width: 7rem;
+  margin-left: auto;
+  position: relative;
+  z-index: 5;
+}
+/*Định dạng khi di chuyển chuột vào ô order mũi tên sẽ chuyển sang màu vàng*/
+i:hover {
+  left: 0.5rem;
+  color: yellow;
+}
+/* End Home Album */

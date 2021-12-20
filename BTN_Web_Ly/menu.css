@@ -1,0 +1,85 @@
+/*
+    Tran Duc Uy B1910174
+    @create-date: 15/12/2021 
+*/
+
+.container{
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.wrapper{
+    max-width: 80%;
+    margin: 0 auto;
+}
+
+.container-head {
+    font-size: 25px;
+    text-align: center;
+    padding: 30px 20px 50px 20px ;
+}
+
+.products {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.products li {
+    flex-basis: 25%;
+    padding-left: 15px;
+    padding-right: 15px;
+    box-sizing: border-box;
+    margin-bottom: 30px;
+}
+
+.products li img{
+    max-width: 100%;
+    height: auto;
+}
+
+.product-item{
+    max-width: 268px;
+    height: 201px;
+}
+
+.product-info .product-cat {
+    display: block;
+    color: #333333;
+    padding: 10px 0px;
+    font-weight: bold;
+}
+
+.product-price{
+    display: inline-block;
+    color: red;
+    padding: 3px 0px;
+    font-weight: bold;
+}
+
+.product-button {
+    display: block;
+    background-color: #fff;
+    border: 1px solid red;
+    padding: 5px 15px;
+    border-radius: 2px 2px;
+    float: right;
+    color: red;
+}
+
+.product-button:hover {
+    background-color: red;
+    color: #fff;
+    transition: 0.3s all;
+}
+
+/*Nếu màn hình bằng với kích thước 1010px thì đặt lại kích thước của nội dung*/
+@media screen and (max-width: 1010px) {
+    .products li {
+        flex-basis: 45%;
+        padding-left: 15px;
+        padding-right: 15px;
+        box-sizing: border-box;
+        margin-bottom: 30px;
+    }
+}
