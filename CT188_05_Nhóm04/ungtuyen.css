@@ -1,0 +1,156 @@
+/*Tăng Thị Kiều Oanh B1906395
+tạo ngày 15/12/2021
+Link tham khao: https://asia-garden.myharavan.com/ */
+.container{
+    margin-top: 20px;
+    display: flex;
+}
+.container__content{
+    width:50%;
+}
+#title{
+    text-align: center;
+    padding:0px 20px;
+    width:250px;
+}
+#title::after{
+    content: "";
+    position: relative;
+    background-image: linear-gradient(90deg,#fff,red,#fff);
+    width:250px;
+    height:5px;
+    display: flex;
+    margin-left: -3px;
+}
+h1{
+    padding:0px 20px;
+}
+h1::after{
+    content: "";
+    position: relative;
+    background-image: linear-gradient(90deg,#fff,red,#fff);
+    width:180px;
+    height:5px;
+    display: flex;
+    margin-left: -20px;
+}
+.container__infomation{
+    width:50%;
+   
+}
+.container__items{
+    margin: 50px 0px;
+}
+.container__items h4{
+    color:gray;
+    margin:5px;
+}
+.container__items b{
+    color:uset;
+    margin:5px;
+}
+.container__list{
+    margin-left: 50px;
+}
+#form__table{
+    display: flex;
+    width:90%;
+    height:500px;
+    margin: 0 auto;
+}
+#table__rows{
+    width:300px;
+    margin-bottom: 100px;
+}
+#form__table tr td{
+    
+    width:300px;
+    padding: 30px 15px;
+}    
+.form__input{
+    padding: 0px 10px;
+    height:40px;
+    width:283px;
+    border:2px solid #ccc;
+    border-radius: 5px;
+}
+.contact{
+    border:2px solid #ccc;
+    border-radius: 5px;
+    width:640px;
+    padding: 20px;
+}
+#submit{
+    text-align: center;
+    width: 80px;
+    height:30px;
+    background-color: #ccc;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px 2px rgb(0, 0, 0,0.5);
+    font-weight: 700;
+    font-size: 16px;
+}
+#submit:hover{
+    background-color: rgb(146, 25, 25);
+    color:#ccc;
+}
+
+@media only screen and (max-width: 812px) {
+    #main-menu{
+        flex-direction: column;
+        text-align: center;
+    }
+    #toggle{
+        display: block;
+    }
+   
+    .navigation-bar{
+        display: none;
+    }
+    .container{
+        margin-top: 20px;
+        display: block; 
+    }
+    .container__infomation{
+        width:100%;
+       
+    }
+    .container__content{
+        width:100%;
+    }
+    #form__table{
+        display: flex;
+        width:100%;
+        height:500px;
+        margin: 0 auto;
+    }
+    #table__rows{
+        margin-bottom: 100px;
+    }
+    .form__input{
+        padding: 0px 10px;
+        height:40px;
+        width: 90%;
+        border:2px solid #ccc;
+        border-radius: 5px;
+    }
+    .contact{
+        border:2px solid #ccc;
+        border-radius: 5px;
+        width: 90%;
+    }
+    #title{
+        text-align: center;
+        width:250px;
+        margin-left: -30px;
+    }
+    #title::after{
+        content: "";
+        position: relative;
+        background-image: linear-gradient(90deg,#fff,red,#fff);
+        width:250px;
+        height:5px;
+        display: flex;
+        margin-left: -3px;
+    }
+}

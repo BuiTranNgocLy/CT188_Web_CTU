@@ -1,0 +1,175 @@
+/*
+    Tran Duc Uy B1910174
+    @create-date: 05/12/2021 
+*/
+
+/*Phần header*/
+
+/*restart lại các thẻ trong web*/
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+ul{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    border-bottom: 1px solid #f5f5f5;
+    padding: 20px 0px;
+    background-color: #ffeaa7;
+    text-align: center;
+}
+
+.inner-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    max-width: 1024px;
+}
+
+#logo{
+    color: #000;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 24px;
+    display: block;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.logo-item{
+    font-size: 12px;
+}
+
+.image-logo{
+    color: #db1a2a;
+    display: inline;
+    font-size: 14px;
+    line-height: 21px;
+    text-align: left;
+    height: 54px;
+    width: 60px;
+}
+
+ul#main-menu{
+    display: flex;
+}
+
+ul#main-menu a{
+    padding: 10px 10px;
+    color: #000;
+    font-size: 18px;
+
+}
+
+/*Thay đổi khi trỏ chuột vào*/
+nav #main-menu li:hover a{
+    color: red;
+    transition: all 0.3s;
+}
+
+#banner{
+    background: url('./images/banner.jpg');
+    min-height: 480px;
+    width: 100%;
+    background-size: cover;
+    background-position: 50% 50%;
+    text-align: left;
+}
+
+#toggle{
+    display: none;
+    /*background: #353b48;*/
+    color: #000;
+    text-align: right;
+    padding: 10px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+/*thay đổi thanh menu theo hàng dọc*/
+@media only screen and (max-width: 812px) {
+    #main-menu{
+        flex-direction: column;
+        text-align: center;
+    }
+    #toggle{
+        display: block;
+    }
+    .navigation-bar{
+        display: none;
+    }
+}
+/*Hết phần header*/
+
+/*Phần footer*/
+
+.footer-container{
+    background-color: #333333;
+    padding: 4rem 0 4rem 0;
+}
+
+.footer{
+    width: 80%;
+    height: auto;
+    background-color: #333333;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 0 auto;
+}
+
+.footer-heading{
+    display: flex;
+    flex-direction: column;
+    margin-right: 4rem;
+}
+
+.footer-heading h2{
+    margin-bottom: 0.5rem;
+}
+
+.footer-heading a{
+    color: #fff;
+    margin-bottom: 0.5rem;
+}
+
+.footer-heading a:hover {
+    color: red;
+    transition: 0.3s ease-out;
+}
+
+.footer-right{
+    font-size: 14px;
+    line-height: 21px;
+    text-align: center;
+}
+
+.footer-right p{
+    color: #fff;
+    font-weight: 300;
+    line-height: 24px;
+}
+
+.footer-right a{
+    color: #db1a2a;
+    display: inline;
+}
+
+/*Hết phần footer*/

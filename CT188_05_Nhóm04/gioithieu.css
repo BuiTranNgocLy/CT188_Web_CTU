@@ -1,0 +1,88 @@
+/*Bùi Trần Ngọc Ly B1908338
+    tạo ngày: 16/12/2021
+    Link tham khao: https://asia-garden.myharavan.com/*/
+/*Định dạng màu sắc và bóng chữ cho tiêu đề 1*/
+/*about-us*/
+/*-- Base Styles --*/
+#about-us {
+  margin: 20px;
+  padding: 20px;
+}
+/*-- Sign Styles --*/
+.sign {
+  font-size: 4em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 30px;
+  z-index: 1;
+}
+.sign .sign__word {
+  padding-top: 20px;
+  margin: 10px;
+  text-align: center;
+  line-height: 1;
+  color: #db1a2a;
+  font-weight: bold;
+  animation: neon 0.08s ease-in-out infinite alternate;
+}
+/*-- Animation Keyframes --*/
+/*animation */
+@keyframes neon {
+  from {
+    text-shadow: 0 0 6px rgba(202, 228, 225, 0.92),
+      0 0 30px rgba(202, 228, 225, 0.34), 0 0 12px rgba(30, 132, 242, 0.52),
+      0 0 21px rgba(30, 132, 242, 0.92), 0 0 34px rgba(30, 132, 242, 0.78),
+      0 0 54px rgba(30, 132, 242, 0.92);
+  }
+  to {
+    text-shadow: 0 0 6px rgba(202, 228, 225, 0.98),
+      0 0 30px rgba(202, 228, 225, 0.42), 0 0 12px rgba(30, 132, 242, 0.58),
+      0 0 22px rgba(30, 132, 242, 0.84), 0 0 38px rgba(30, 132, 242, 0.88),
+      0 0 60px rgba(30, 132, 242, 1);
+  }
+}
+/*Responsive với Mobile*/
+@media (max-width: 46.1875em) {
+  #about-us {
+    font-size: 50%;
+  }
+}
+/*Ressponsive with Tablet*/
+@media (min-width: 46.25em) and (max-width: 63.9375em) {
+  #about-us {
+    font-size: 70%;
+  }
+}
+/*định dạng chung phần nội dung about*/
+.container-about{
+  width: 60%;
+  margin: 1rem auto;
+  padding: 2rem;
+  text-align: justify;
+  transition: all 0.3s;
+}
+/*định dạng phần tử p trong container-about*/
+.container-about p{
+  line-height: 1.5;
+  letter-spacing: 0.3px;
+  word-spacing: 2px;
+}
+/*Định dạng in hoa kí tự đầu tiên của tag p*/
+.container-about p:first-child::first-letter{
+  color:#FE5F55;
+  font-weight: bold;
+  font-size: 70px;
+  float: left;
+  line-height: 60px;
+  padding-right: 8px;
+  margin-top: -3px;
+}
+/*Responsive with Mobile*/
+@media (max-width: 46.1875em){
+  .container{
+      width: 100%;
+      padding: 1rem;
+  }
+}
